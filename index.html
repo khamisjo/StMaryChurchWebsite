@@ -1,116 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.88.1" />
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
     <title>St. Mary Church</title>
 
     <!-- Custom styles for this template -->
-    <link href="pacific.css" rel="stylesheet">
-</head>
+    <link href="pacific.css" rel="stylesheet" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">St. Mary Church</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#calendar">Calendar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">St. Mary Church</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#calendar"
+                  >Calendar</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Marketing messaging and featurettes
+      <!-- Marketing messaging and featurettes
   ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <div class="container marketing">
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-7 text-center" id="coastSection">
+            <h2 class="featurette-heading">
+              Saint Mary Coptic Orthodox Church
+            </h2>
+            <p class="lead">serving Northwest Arkansas</p>
+            <p class="lead">
+              Currently mobile church hosting litrugies at St. Nicholas
+              Antiochian Orthodox Church
+              <br />
+              located at
+              <a href="https://goo.gl/maps/aSxcvSSZMMQq46hq9"
+                >3171 S 48th St, Springdale, AR 72762</a
+              >
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="./images/saint_mary.png"
+              alt="placeholder image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
 
-            <div class="row featurette">
-                <div class="col-md-7 text-center " id='coastSection'>
-                    <h2 class="featurette-heading">Saint Mary Coptic Orthodox Church</h2>
-                    <p class="lead"> serving Northwest Arkansas </p>
-                    <p class="lead"> Currently mobile church hosting litrugies at St. Nicholas Antiochian Orthodox
-                        Church
-                        <br />
-                        located at <a href="https://goo.gl/maps/aSxcvSSZMMQq46hq9">3171 S 48th St, Springdale, AR
-                            72762</a>
-                    </p>
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7" id="calendar">
+            <h2 class="featurette-heading">Calendar</h2>
+            <h5 class="text-muted">
+              Please join us at our bi-weekly litrugy hosted every other
+              Saturday from 9 AM to 11:30 AM and an Aghaby hour afterwards
+            </h5>
+          </div>
+          <div class="col-md-5">
+            <iframe
+              id="google-calendar"
+              class="img-fluid"
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&src=c3RtYXJ5bndhQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
+            ></iframe>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-11 text-center" id="contact">
+            <h2 class="featurette-heading">Contact</h2>
+            <h5 class="text-muted">
+              Father Barsoum Eskandar:
+              <a href="tel:+4694322882">(469) 432-2882 </a>
+            </h5>
+            <h5 class="text-muted">
+              Deacon Ashraf Ruzek:<a href="tel:+4792120411">(479) 212-0411</a>
+            </h5>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-11 text-center" id="donate">
+            <h2 class="featurette-heading">Donate</h2>
+            <br />
+            <div>
+              <div id="smart-button-container">
+                <div style="text-align: center">
+                  <label for="amount">Amount &nbsp;</label
+                  ><input
+                    name="amountInput"
+                    type="number"
+                    id="amount"
+                    value=""
+                  /><span> USD</span>
                 </div>
-                <div class="col-md-5">
-                    <img src="./images/saint_mary.png" alt="placeholder image" class="img-fluid">
+                <p
+                  id="priceLabelError"
+                  style="visibility: hidden; color: red; text-align: center"
+                >
+                  Please enter an amount
+                </p>
+                <div style="text-align: center">
+                  <div id="paypal-button-container"></div>
                 </div>
+              </div>
+              <script
+                src="https://www.paypal.com/sdk/js?client-id=Aeu-VvrWNWydjajIu6Uq3G_0LotXIornPPIokdHBGxEaYKCdNluvVRI30fNbDtP95n13vy1C8XsSsBII&enable-funding=venmo&currency=USD"
+                data-sdk-integration-source="button-factory"
+              ></script>
+
+              <script>
+                function initPayPalButton() {
+                  paypal
+                    .Buttons({
+                      style: {
+                        shape: 'rect',
+                        color: 'gold',
+                        layout: 'vertical',
+                        label: 'paypal',
+                      },
+
+                      createOrder: function (data, actions) {
+                        var amount = document.querySelector(
+                          '#smart-button-container #amount'
+                        );
+                        if (amount.value.length < 1) {
+                          amount.value = 1;
+                        }
+                        if (amount.value == 0) {
+                          amount.value = 1;
+                        }
+                        if (amount.value < 0) {
+                          amount.value = -amount.value;
+                        }
+
+                        return actions.order.create({
+                          purchase_units: [
+                            {
+                              description: 'Donate',
+                              amount: {
+                                currency_code: 'USD',
+                                value: amount.value,
+                              },
+                            },
+                          ],
+                        });
+                      },
+
+                      onApprove: function (data, actions) {
+                        return actions.order
+                          .capture()
+                          .then(function (orderData) {
+                            // Full available details
+                            console.log(
+                              'Capture result',
+                              orderData,
+                              JSON.stringify(orderData, null, 2)
+                            );
+
+                            // Show a success message within this page, e.g.
+                            const element = document.getElementById(
+                              'paypal-button-container'
+                            );
+                            element.innerHTML = '';
+                            element.innerHTML =
+                              '<h3>Thank you for your payment!</h3>';
+
+                            // Or go to another URL:  actions.redirect('thank_you.html');
+                          });
+                      },
+
+                      onError: function (err) {
+                        console.log(err);
+                      },
+                    })
+                    .render('#paypal-button-container');
+                }
+                initPayPalButton();
+              </script>
             </div>
+          </div>
+        </div>
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7" id="calendar">
-                    <h2 class="featurette-heading">Calendar</h2>
-                    <h5 class="text-muted">Please join us at our bi-weekly litrugy hosted every other Saturday from 9 AM
-                        to
-                        11:30 AM and an Aghaby hour afterwards
-                    </h5>
-                </div>
-                <div class="col-md-5">
-                    <iframe id="google-calendar" class="img-fluid"
-                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&src=c3RtYXJ5bndhQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"></iframe>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-11 text-center" id="contact">
-                    <h2 class="featurette-heading">Contact</h2>
-                    <h5 class="text-muted">Father Barsoum Eskandar: <a href="tel:+4694322882">(469) 432-2882 </a></h5>
-                    <h5 class="text-muted"> Deacon Ashraf Ruzek:<a href="tel:+4792120411">(479) 212-0411</a> </h5>
-                </div>
-
-            </div>
-            <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
-        </div><!-- /.container -->
+        <hr class="featurette-divider" />
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
     </main>
 
     <!-- FOOTER -->
     <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>St. Mary Coptic Orthodox Church
-        </p>
-        <a href="https://suscopts.org/">Coptic Orthodox Church of Alexandria, Diocese of the Southern United States</a>
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>St. Mary Coptic Orthodox Church</p>
+      <a href="https://suscopts.org/"
+        >Coptic Orthodox Church of Alexandria, Diocese of the Southern United
+        States</a
+      >
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
