@@ -141,101 +141,31 @@
           <div class="col-md-11 text-center" id="donate">
             <h2 class="featurette-heading">Donate</h2>
             <br />
-            <div>
-              <div id="smart-button-container">
-                <div style="text-align: center">
-                  <label for="amount">Amount &nbsp;</label
-                  ><input
-                    name="amountInput"
-                    type="number"
-                    id="amount"
-                    value=""
-                  /><span> USD</span>
-                </div>
-                <p
-                  id="priceLabelError"
-                  style="visibility: hidden; color: red; text-align: center"
-                >
-                  Please enter an amount
-                </p>
-                <div style="text-align: center">
-                  <div id="paypal-button-container"></div>
-                </div>
-              </div>
-              <script
-                src="https://www.paypal.com/sdk/js?client-id=Aeu-VvrWNWydjajIu6Uq3G_0LotXIornPPIokdHBGxEaYKCdNluvVRI30fNbDtP95n13vy1C8XsSsBII&enable-funding=venmo&currency=USD"
-                data-sdk-integration-source="button-factory"
-              ></script>
-
-              <script>
-                function initPayPalButton() {
-                  paypal
-                    .Buttons({
-                      style: {
-                        shape: 'rect',
-                        color: 'gold',
-                        layout: 'vertical',
-                        label: 'paypal',
-                      },
-
-                      createOrder: function (data, actions) {
-                        var amount = document.querySelector(
-                          '#smart-button-container #amount'
-                        );
-                        if (amount.value.length < 1) {
-                          amount.value = 1;
-                        }
-                        if (amount.value == 0) {
-                          amount.value = 1;
-                        }
-                        if (amount.value < 0) {
-                          amount.value = -amount.value;
-                        }
-
-                        return actions.order.create({
-                          purchase_units: [
-                            {
-                              description: 'Donate',
-                              amount: {
-                                currency_code: 'USD',
-                                value: amount.value,
-                              },
-                            },
-                          ],
-                        });
-                      },
-
-                      onApprove: function (data, actions) {
-                        return actions.order
-                          .capture()
-                          .then(function (orderData) {
-                            // Full available details
-                            console.log(
-                              'Capture result',
-                              orderData,
-                              JSON.stringify(orderData, null, 2)
-                            );
-
-                            // Show a success message within this page, e.g.
-                            const element = document.getElementById(
-                              'paypal-button-container'
-                            );
-                            element.innerHTML = '';
-                            element.innerHTML =
-                              '<h3>Thank you for your payment!</h3>';
-
-                            // Or go to another URL:  actions.redirect('thank_you.html');
-                          });
-                      },
-
-                      onError: function (err) {
-                        console.log(err);
-                      },
-                    })
-                    .render('#paypal-button-container');
-                }
-                initPayPalButton();
-              </script>
+            <div
+              style="
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 1200px;
+                padding-top: 100%;
+              "
+            >
+              <iframe
+                title="Donation form powered by Zeffy"
+                style="
+                  position: absolute;
+                  border: 0;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                src="https://www.zeffy.com/en-US/embed/donation-form/bd1aaa99-b1e4-4aeb-b525-e5546f77b0f3"
+                allowpaymentrequest
+                allowTransparency="true"
+              ></iframe>
             </div>
           </div>
         </div>
